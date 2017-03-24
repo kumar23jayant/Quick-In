@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Bio Login",
+  "version": "1.0",
+  "description": "Login using Biometrics",
+  "permissions": ["http://*/*", "https://*/*", "tabs", "activeTab", "identity", "storage"],
+  "browser_action": {
+    "default_title": "BioLogin",
+    "default_popup": "popup.html"
+  },
+  "background": {
+	"scripts": ["socket.io.js", "background.js"],
+	"persistent": true
+  },
+  "content_scripts": [
+      {
+      "matches": [
+        "https://stackoverflow.com/users/login*",
+        "https://www.facebook.com/login/*",
+        "https://www.twitter.com/login"
+        
+      ], 
+      "js": ["autofill.js"], 
+      "run_at": "document_end",
+      "all_frames": true
+      }
+  ]
+}
+

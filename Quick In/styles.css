@@ -1,0 +1,17 @@
+
+body{
+	height: 380px;
+	width: 300px;
+	background: #0EF77B;
+}
+
+div{
+	margin-top: 20px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#title{
+	font-size: 16px;
+	color: white;
+}
+
