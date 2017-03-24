@@ -20,14 +20,17 @@
 
   socket.on("openUrl", function(data){
 
+	  
+	//Pass the recieved username and password along with the id of website to login 
+	  
 	//var myUsername = data.name; 
 	//var myPassword = data.pass;
 	var myUsername = 'rayofhope.gs@gmail.com'; 
 	var myPassword = 'itachi123';
-	var myId = 'twitter'; 
+	var myId = 'stackoverflow'; 
 	var newURL ;
 
-
+	// deciding on the url to use based on the webste id
 	switch(myId){
 		case 'stackoverflow': 
 			newURL = "https://stackoverflow.com/users/login"; 
@@ -51,12 +54,13 @@
 		break;
 	}
 
+	//using chrome local storage to communicate variables.
 	chrome.storage.local.set({'email': myUsername});
-    chrome.storage.local.set({'pass': myPassword});
-    chrome.storage.local.set({'id': myId});
+	chrome.storage.local.set({'pass': myPassword});
+	chrome.storage.local.set({'id': myId});
 
 
-		
+	//opening the new tab with the specified url	
 	chrome.tabs.create({ url: newURL });
 	
   });
