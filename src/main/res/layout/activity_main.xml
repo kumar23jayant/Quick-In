@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="vision.google.com.qrcodescanner.MainActivity"
+    >
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dip"
+        android:paddingBottom="15dip"
+        android:layout_marginTop="100dp"
+        android:id="@+id/linear"
+        >
+        <ImageView android:id="@+id/scanqr"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:scaleType="fitStart"
+            android:layout_weight="1"
+            android:src="@drawable/scanningqr"
+            android:layout_marginLeft="35dp"/>
+        <ImageView android:src="@drawable/skip"
+            android:layout_height="130dp"
+            android:layout_width="130dp"
+            android:scaleType="fitStart"
+            android:layout_weight="1"
+            android:id="@+id/skip"
+            android:layout_marginRight="35dp"></ImageView>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/linear"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:layout_weight="1"
+            android:src="@drawable/scanningqr"
+            android:layout_marginLeft="35dp"
+            android:text="Pair new device"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:id="@+id/tv"/>
+        <TextView android:src="@drawable/skip"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:scaleType="fitStart"
+            android:layout_weight="1"
+            android:text="continue with existing"
+            android:layout_marginRight="35dp"
+            android:textSize="24dp"
+            android:gravity="center"
+            ></TextView>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
