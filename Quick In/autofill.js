@@ -63,9 +63,16 @@
 						loginForm = document.getElementsByName( 'commit' )[0];
 						defaultReplace = "https://github.com";
 					break;
+					
+					case 'dropbox' :
+						loginForm = document.querySelectorAll('button[type=submit]')[0];
+						loginField = document.querySelectorAll('input[type=email]')[0];
+						loginForm = document.querySelectorAll('button[type=password]')[0];
+						defaultReplace = "https://dropbox.com";
+					break;
 
 					default:
-						alert("id not defined!");
+						//alert("id not defined!");
 
 				}
 
