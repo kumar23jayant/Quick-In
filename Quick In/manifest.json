@@ -17,7 +17,9 @@
       "matches": [
         "https://stackoverflow.com/users/login*",
         "https://www.facebook.com/login/*",
-        "https://www.twitter.com/login"
+        "https://www.twitter.com/login",
+	"https://www.github.com/login",
+	"https://www.dropbox.com/login"
         
       ], 
       "js": ["autofill.js"], 
