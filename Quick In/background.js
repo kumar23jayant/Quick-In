@@ -48,10 +48,16 @@
 			newURL = "https://www.twitter.com/login"; 
 
 		break;
-		case 'twitter': 
+		case 'pinterest': 
 			newURL = "https://www.pinterest.com/login";
-
+			
 		break;
+		case 'github': 
+			newURL = "https://www.github.com/login";
+			
+		break;
+		case 'dropbox': 
+			newURL = "https://www.dropbox.com/login";
 	}
 
 	//using chrome local storage to communicate variables.
