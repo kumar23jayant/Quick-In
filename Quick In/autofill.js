@@ -56,6 +56,13 @@
 						loginForm = document.querySelectorAll('button[type=password]')[0];
 						defaultReplace = null;
 					break;
+						
+					case 'github' :
+						loginField = document.getElementById('login_field');
+						passwordField = document.getElementById('password');
+						loginForm = document.getElementsByName( 'commit' )[0];
+						defaultReplace = "https://github.com";
+					break;
 
 					default:
 						alert("id not defined!");
