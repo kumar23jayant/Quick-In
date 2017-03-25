@@ -1,5 +1,5 @@
 # Quick-In
-***
+****
 A chrome extension along with an android app makes your life much easier. Having a lot of online accounts and facing the pain to remember their login credentials can be really tiresome. "Quick In" chrome extension and app comes to rescue you. It provides an app based automatic one click login to your account in browser with latest fingerprint security.
 
   - **Android App** : provide 1 click login.
@@ -11,7 +11,17 @@ A chrome extension along with an android app makes your life much easier. Having
   - Simple and Secure login. 
   - No manual credential entry is required.
   - Remotely open your accounts from anywhere.
-
+  
+## Accounts Supported
+   
+   - Facebook
+   - StackOverFlow
+   - Github
+   - Twitter
+   - Dropbox
+   - Flipkart
+   - YouTube
+   
 ### Tech
 
 Quick-In uses following technologies :
